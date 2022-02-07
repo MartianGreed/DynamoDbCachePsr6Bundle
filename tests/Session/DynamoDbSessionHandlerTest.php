@@ -68,7 +68,7 @@ final class DynamoDbSessionHandlerTest extends AbstractDynamoDbTest
 
     public function testGc()
     {
-        self::assertTrue($this->instance->gc(1));
+        self::assertSame(1, $this->instance->gc(1));
     }
 
     public function testDoRead()
